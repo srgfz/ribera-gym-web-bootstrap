@@ -1,0 +1,25 @@
+body {
+    color: rgb(35, 35, 35);
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 1600px;
+    background-color: rgba(195, 191, 191, 0.659);
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.footer {
+    background-color: rgb(35, 35, 35);
+    background-image: url(../assets/images/brushed-alum-dark.png);
+    text-align: center;
+    padding: 50px;
+}
