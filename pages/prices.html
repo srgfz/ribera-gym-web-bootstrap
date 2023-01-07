@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Ribera Gym</title>
+</head>
+
+<body>
+    <!-- Comienzo del Header -->
+    <header class="sticky-lg-top border-4 border-bottom header z-3">
+        <!-- Comienzo del Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light px-3 py-0 col-12">
+            <div class="d-flex d-lg-none d-block justify-content-between col-5 col-md-3">
+                <h1><a href="./index.php"><img src="../assets/images/logo2.png" alt="Logo del gimansio"
+                            class="img-fluid"></a>
+                </h1>
+
+            </div>
+            <div class="d-flex d-lg-none">
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="container-fluid justify-content-center justify-content-lg-between">
+                <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.php"><img
+                            src="../assets/images/logo1.png" alt="Logo del gimnasio" class="img-fluid"></a></h1>
+                <div class="col-10">
+                    <ul class="collapse navbar-collapse gap-5 m-3 d-lg-flex justify-content-center justify-content-lg-evenly"
+                        id="navbarTogglerDemo03">
+                        <li class="d-flex justify-content-center"><a href="#"
+                                class="px-2 fw-bold my-2 border-bottom  border-info-subtle">Inicio</a>
+                        </li>
+                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Actividades y
+                                Precios</a></li>
+                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Nuestras
+                                Instalaciones</a></li>
+                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Contacto</a></li>
+                        <li class="d-flex justify-content-center"><a href="./login.html"
+                                class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i>
+                                Iniciar
+                                Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-----Comienzo del visor------->
+        <div class="visor position-relative">
+            <img src="../assets/images/prices1.jpg" alt="" class="position-absolute d-md-none viser__img">
+            <img src="../assets/images/prices2.jpg" alt="" class="position-absolute d-none d-md-block viser__img">
+            <img src="../assets/images/prices3.jpg" alt="" class="position-absolute d-none d-lg-block viser__img">
+            <h2 class="position-absolute text-light fs-2 text-center visor__text">Este mes ¡Matricula gratuita!</h2>
+        </div>
+        <!----- precios y actividades------->
+        <div class="my-4 p-md-4 mx-md-5 p-lg-5 d-lg-flex align-items-lg-start">
+            <!-----nav del main de resolución lg en adelante------->
+            <div class="nav nav-pills me-lg-3 d-flex justify-content-evenly" id="pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <button class="nav-link active my-3 col-5 col-lg-12" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Precios</button>
+                <button class="nav-link my-3 col-5 col-lg-12" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Actividades</button>
+            </div>
+            <!----cuerpo del main------->
+            <div class="tab-content col-11 mx-auto" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <!-----Comienzo del acordeón de precios------->
+                    <div class="accordion prices__accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headerCollapsePirceIndividual">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePirceIndividual" aria-expanded="true"
+                                    aria-controls="collapsePirceIndividual">
+                                    Individual
+                                </button>
+                            </h2>
+                            <div id="collapsePirceIndividual" class="accordion-collapse collapse show"
+                                aria-labelledby="headingPirceIndividual" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <table class="table table-dark table-striped text-center col-12 prices__table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Mañanas</th>
+                                                <th scope="col">Tardes</th>
+                                                <th scope="col">Mañanas y Tardes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <th scope="row">3 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ilimitado</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headerCollapsePriceFamiliar">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePriceFamiliar" aria-expanded="false"
+                                    aria-controls="collapsePriceFamiliar">
+                                    Familiar
+                                </button>
+                            </h2>
+                            <div id="collapsePriceFamiliar" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <table class="table table-dark table-striped text-center col-12 prices__table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Mañanas</th>
+                                                <th scope="col">Tardes</th>
+                                                <th scope="col">Mañanas y Tardes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <th scope="row">3 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ilimitado</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headerCollapsePriceYoung">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePriceYoung" aria-expanded="false"
+                                    aria-controls="collapsePriceYoung">
+                                    Jóvenes (menores de 26 años)
+                                </button>
+                            </h2>
+                            <div id="collapsePriceYoung" class="accordion-collapse collapse"
+                                aria-labelledby="collapsePriceYoung" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <table class="table table-dark table-striped text-center col-12 prices__table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Mañanas</th>
+                                                <th scope="col">Tardes</th>
+                                                <th scope="col">Mañanas y Tardes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <th scope="row">3 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ilimitado</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headerCollapsePriceSenior">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePriceSenior" aria-expanded="false"
+                                    aria-controls="collapsePriceSenior">
+                                    Mayores (mayores de 60 años)
+                                </button>
+                            </h2>
+                            <div id="collapsePriceSenior" class="accordion-collapse collapse"
+                                aria-labelledby="collapsePriceSenior" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <table class="table table-dark table-striped text-center col-12 prices__table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Mañanas</th>
+                                                <th scope="col">Tardes</th>
+                                                <th scope="col">Mañanas y Tardes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="">
+                                            <tr>
+                                                <th scope="row">3 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5 días / Semana</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ilimitado</th>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                                <td>25.54€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----Comienzo de las actividades------->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0"> <strong>BThis is the third item's accordion body.</strong> It is hidden by
+                    default,
+                    until
+                    the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                    that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.</div>
+            </div>
+        </div>
+        <!-----Comienzo de la sección de actividades------->
+
+
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="row justify-content-around py-4 mx-0 footer">
+        <div class="col-12 col-md-3 text-center text-md-start m-3">
+            <h3 class="text-light opacity-75">RiberaGym</h3>
+            <ul class="p-0 ps-md-3 footer__list">
+                <li><a href="#" class="">Preguntas Frecuentes</a>
+                </li>
+                <li><a href="mailto:express@ribera.com" class="">Política de Privacidad</a>
+                </li>
+                <li><a href="#" class="">Aviso Legal</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-3 text-center text-md-start m-3">
+            <h3 class="text-light opacity-75">Redes Sociales</h3>
+            <ul class="p-0 ps-md-3 footer__list">
+                <li><a href="http://instagram.com" target="_blank" class=""><i class="bi bi-instagram"></i>
+                        Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank" class=""><i class="bi bi-twitter"></i> Twitter</a>
+                </li>
+                <li><a href="https://www.tiktok.com" target="_blank" class=""><i class="bi bi-tiktok"></i> TikTok</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-3 text-center text-md-start m-3">
+            <h3 class="text-light opacity-75">Descarga nuestra App</h3>
+            <ul class="p-0 ps-md-3 footer__list">
+                <li><a href="https://play.google.com/store/apps" target="_blank" class=""><i
+                            class="bi bi-google-play"></i> Play
+                        Store -
+                        Android</a></li>
+                <li><a href="https://www.apple.com/es/app-store/" target="_blank" class=""><i class="bi bi-apple"></i>
+                        App Store
+                        - IOS</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

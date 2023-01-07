@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- Iconos Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
@@ -63,8 +63,10 @@
         antes de apuntarte</h2>
     </div>
     <!-----Comienzo de la galeria------->
-    <div class="gallery">
-      <h3 class=" fs-2 my-3 mt-5 text-center">Nuestras Instalaciones</h3>
+    <div class="gallery row py-5 px-2 p-md-5 m-0">
+      <h3 class=" col-md-3 col-4 border-bottom border-4 p-1 border-warning border-opacity-75">Nuestras Instalaciones
+      </h3>
+
       <div class="row py-5 px-3 mx-4 row-cols-1 row-cols-md-4 row-cols-lg-5 justify-content-between">
         <button type="button" class="p-0 m-0 bg-dark col m-md-3 my-3" data-bs-toggle="modal"
           data-bs-target="#galleryModal">
@@ -121,7 +123,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="galleryModalLabel">Nuestras Instalaciones</h1>
+            <h4 class="modal-title fs-5" id="galleryModalLabel">Nuestras Instalaciones</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -182,19 +184,36 @@
     </div>
     <!-----Comienzo de la sección de servicios  ------->
     <div class="row py-5 px-2 p-md-5 bg-primary m-0">
-      <h3 class="">Otros Servicios</h3>
-      <ul class="px-5">
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Parking de vehículos.</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Parking de bicicletas.</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Parking de patinetes.</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Entrenamientos Personales.</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Asesoramiento Nutricional y Deportivo.</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Actividades Especiales Adultos: Kick-boxing,
+      <h3 class=" col-md-3 col-4 border-bottom border-4 p-1 border-warning border-opacity-75">Otros Servicios</h3>
+      <ul class="px-5 list-group list-group-flush">
+        <li class="my-2 list-group-item bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Parking de
+          vehículos.</li>
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Parking de
+          bicicletas.</li>
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Parking de
+          patinetes.</li>
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Entrenamientos
+          Personales.</li>
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Asesoramiento
+          Nutricional y
+          Deportivo.</li>
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Actividades
+          Especiales Adultos:
+          Kick-boxing,
           Boxeo,
           Zumba,
           Yoga, etc (Preguntar sobre las actividades
           disponibles).</li>
-        <li class="my-2"><i class="bi bi-arrow-right-circle-fill"></i> Actividades Infantiles: Kung-Fu, Gimnasia
+        <li class="my-2 list-group-item  bg-transparent border-bottom"><i class="bi bi-arrow-right-circle-fill"></i>
+          Actividades
+          Infantiles: Kung-Fu,
+          Gimnasia
           Rítmica,
           Karate,
           etc.
@@ -236,17 +255,10 @@
     </div>
   </footer>
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  <!-- JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    -->
 
   <script src="../js/script.js"></script>
 

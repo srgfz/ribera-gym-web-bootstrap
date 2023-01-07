@@ -75,4 +75,9 @@ ul {
 .gallery__img {
     height: 100%;
     width: 100%;
+    cursor: zoom-in;
+}
+
+.prices__accordion {
+    min-width: 360px;
 }
