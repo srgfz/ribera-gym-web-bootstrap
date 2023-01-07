@@ -19,7 +19,7 @@
 
 <body>
   <!-- Comienzo del Header -->
-  <header class="sticky-lg-top border-4 border-bottom header bg-light bg-opacity-75">
+  <header class="sticky-lg-top border-4 border-bottom header z-3">
     <!-- Comienzo del Nav -->
     <nav class="navbar navbar-expand-lg navbar-light px-3 py-0 col-12">
       <div class="d-flex d-lg-none d-block justify-content-between col-5 col-md-3">
@@ -33,9 +33,6 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="./logOut.php">
-          <i class="bi bi-box-arrow-right fs-3"></i>
-        </a>
       </div>
       <div class="container-fluid justify-content-center justify-content-lg-between">
         <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.php"><img
@@ -46,25 +43,165 @@
             <li class="d-flex justify-content-center"><a href="#"
                 class="px-2 fw-bold my-2 border-bottom  border-info-subtle">Inicio</a>
             </li>
-            <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Conocenos</a></li>
             <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Actividades y Precios</a></li>
+            <li class="d-flex justify-content-center"><a href="./pages/services.html" class="px-2 my-2">Nuestras
+                Instalaciones</a></li>
             <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Contacto</a></li>
-            <li class="d-flex justify-content-center"><a href="#" class="px-2 btn btn-outline-info fw-bold my-2"><i
-                  class="bi bi-person-circle"></i> Iniciar
+            <li class="d-flex justify-content-center"><a href="./pages/login.html"
+                class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i> Iniciar
                 Sesión</a></li>
           </ul>
-        </div>
-        <div class="d-flex justify-content-center d-none d-lg-flex">
-          <div class="align-items-center d-none d-md-flex gap-3">
-            <a href="./logOut.php">
-              <i class="bi bi-box-arrow-right fs-3"></i>
-            </a>
-          </div>
         </div>
       </div>
     </nav>
   </header>
-  <main>lkjl</main>
+  <main class="main">
+    <!-----Comienzo del visor------->
+    <div class="visor position-relative">
+      <img src="./assets/images/visorImg.jpg" alt="" class="position-absolute d-md-none viser__img">
+      <img src="./assets/images/visorImg2.jpg" alt="" class="position-absolute d-none d-md-block d-lg-none viser__img">
+      <video src="./assets/videos/visor1.mp4" class="visor__video position-absolute d-none d-lg-block" autoplay loop
+        muted></video>
+      <h2 class="position-absolute text-light fs-3 text-center visor__text">Redescubre tus límites</h2>
+    </div>
+    <!-----Comienzo de la sección de cards------->
+    <section class="cards py-5 row justify-content-around flex-column justify-content-center flex-md-row m-0">
+      <div class="card py-1 col-12 col-lg-3 col-md-7">
+        <h5 class="card-title text-center my-4 px-2">Aprovecha todas las ventajas de ser socio</h5>
+        <img src="./assets/images/pexels-andrea-piacquadio-866027.jpg" class="card-img-top card__img" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <p class="card-text d-none d-lg-block">Conviértete en socio y disfuta de todas nuestras nuestras
+            instalaciones, de las mejores
+            clases de clases dirigidas por profesionales y de descuentos exclusivos.</p>
+          <p class="d-none d-md-block">¡No pierdas la oportunidad de
+            mejorar tu calidad de vida!</p>
+          <a href="#" class="btn btn-primary">Hazte Socio</a>
+        </div>
+      </div>
+      <div class="card py-1 col-12 col-lg-3 col-md-7">
+        <h5 class="card-title text-center my-4 px-2">Conoce nuestro método y saca tu mejor versión
+        </h5>
+        <img src="./assets/images/pexels-leon-ardho-1552249.jpg" class="card-img-top card__img" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <p class="card-text d-none d-lg-block">Con nuestro método personalizado y con todo nuestro equipo de
+            profesionales a tu
+            disposición podrás poner a prueba tus límites.</p>
+          <p class=" d-none d-md-block">¡Ven gratis a conocer a nuestro equipo y el plan diseñado para ti y tus
+            objetivos!</p>
+          <a href="#" class="btn btn-primary">Saber más</a>
+        </div>
+      </div>
+      <div class="card py-1 col-12 col-lg-3 col-md-7">
+        <h5 class="card-title text-center my-4 px-2">Disfruta de nuestras actividades dirigidas y
+          diseñadas para ti</h5>
+        <img src="./assets/images/pexels-william-choquette-1954524.jpg" class="card-img-top card__img" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <p class="card-text d-none d-lg-block">Nuestro programa de actividades
+            físicas exclusivo está creado personalmente para lograr tus metas y supervisado por los mejores
+            profesionales.
+          </p>
+          <p class="d-none d-md-block">¡Un plan a tu medida con actividades individuales y colectivas!</p>
+          <a href="#" class="btn btn-primary">Nuestras Actividades</a>
+        </div>
+      </div>
+    </section>
+    <!-----Comienzo de la sección de nuestros centros------->
+    <section class="row bg-primary p-5 m-0">
+      <h3 class="text-center fs-2">Nuestros Centros</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-around">
+        <div class="col">
+          <div class="card">
+            <div id="carouselIndicatorsGym1" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsGym1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsGym1" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsGym1" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/gym1-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/gym1-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/gym1-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsGym1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsGym1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fs-4 text-center">Ribera del Tajo Center - Talavera</h5>
+              <p class="card-text mb-0"><i class="bi bi-geo-alt"></i> <span class="fw-bold">Dirección: </span> Av. Real
+                Fábrica de Sedas, s/n, 45600
+                Talavera de la Reina, Toledo.</p>
+              <p class="card-text mb-0"><i class="bi bi-envelope"></i> <span class="fw-bold">Email:
+                </span>riberatajo@ribera.com</p>
+              <p class="card-text"><i class="bi bi-telephone"></i> <span class="fw-bold">Teléfono: </span>925 72 22 33
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div id="carouselIndicatorGym2" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorGym2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorGym2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorGym2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/images/gym2-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/gym2-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/images/gym2-3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorGym2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorGym2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fs-4 text-center">Ribera Toletum Center - Toledo</h5>
+              <p class="card-text mb-0"><i class="bi bi-geo-alt"></i> <span class="fw-bold">Dirección: </span> Av. de
+                Europa, 22, 45003 Toledo</p>
+              <p class="card-text mb-0"><i class="bi bi-envelope"></i> <span class="fw-bold">Email:
+                </span>riberatoletum@ribera.com</p>
+              <p class="card-text"><i class="bi bi-telephone"></i> <span class="fw-bold">Teléfono: </span>925 92 64 16
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
   <!-- Footer -->
   <footer class="row justify-content-around py-4 mx-0 footer">
     <div class="col-12 col-md-3 text-center text-md-start m-3">

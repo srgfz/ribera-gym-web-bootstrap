@@ -1,6 +1,7 @@
 body {
     color: rgb(35, 35, 35);
     margin: 0 auto;
+    width: 100%;
     min-width: 375px;
     max-width: 1600px;
     background-color: rgba(195, 191, 191, 0.659);
@@ -15,11 +16,63 @@ ul {
     list-style: none;
 }
 
+.header {
+    background-color: rgba(255, 255, 255, 0.86);
+}
+
 
 
 .footer {
     background-color: rgb(35, 35, 35);
     background-image: url(../assets/images/brushed-alum-dark.png);
     text-align: center;
-    padding: 50px;
+    padding: 80px 50px;
+}
+
+
+.visor {
+    height: 400px;
+}
+
+.viser__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.visor__video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+
+.visor__text {
+    width: 100%;
+    bottom: 20px;
+    font-variant: small-caps;
+}
+
+
+
+.card__img {
+    clip-path: polygon(25% 0%, 75% 0%, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+    filter: grayscale(50%);
+
+}
+
+
+
+.login {
+    min-width: 350px;
+    max-width: 700px;
+    color: rgb(62, 61, 61);
+}
+
+
+
+.gallery__img {
+    height: 100%;
+    width: 100%;
 }
