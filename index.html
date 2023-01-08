@@ -11,21 +11,24 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- Iconos Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+  <!-- CSSs propios -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/visor.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/index.css">
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-  <title>Ribera Gym</title>
+  <title>Ribera Gym | Inicio</title>
 </head>
 
 <body>
   <!-- Comienzo del Header -->
-  <header class="sticky-lg-top border-4 border-bottom header z-3">
+  <header class="border-4 border-bottom header z-3">
     <!-- Comienzo del Nav -->
     <nav class="navbar navbar-expand-lg navbar-light px-3 py-0 col-12">
       <div class="d-flex d-lg-none d-block justify-content-between col-5 col-md-3">
-        <h1><a href="./index.php"><img src="./assets/images/logo2.png" alt="Logo del gimansio" class="img-fluid"></a>
+        <h1><a href="./index.html"><img src="./assets/images/logo2.png" alt="Logo del gimansio" class="img-fluid"></a>
         </h1>
-
       </div>
       <div class="d-flex d-lg-none">
         <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
@@ -35,28 +38,33 @@
         </button>
       </div>
       <div class="container-fluid justify-content-center justify-content-lg-between">
-        <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.php"><img
+        <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.html"><img
               src="./assets/images/logo1.png" alt="Logo del gimnasio" class="img-fluid"></a></h1>
         <div class="col-10">
           <ul class="collapse navbar-collapse gap-5 m-3 d-lg-flex justify-content-center justify-content-lg-evenly"
             id="navbarTogglerDemo03">
-            <li class="d-flex justify-content-center"><a href="#"
-                class="px-2 fw-bold my-2 border-bottom  border-info-subtle">Inicio</a>
+            <li class="d-flex justify-content-center"><a href="./index.html"
+                class="px-2 fw-bold my-2 border-bottom border-info-subtle nav__link nav__link--active">Inicio</a>
             </li>
-            <li class="d-flex justify-content-center"><a href="./pages/prices.html" class="px-2 my-2">Actividades y
+            <li class="d-flex justify-content-center"><a href="./pages/prices.html"
+                class="px-2 my-2  nav__link">Actividades y
                 Precios</a></li>
-            <li class="d-flex justify-content-center"><a href="./pages/services.html" class="px-2 my-2">Nuestras
+            <li class="d-flex justify-content-center"><a href="./pages/services.html"
+                class="px-2 my-2  nav__link">Nuestras
                 Instalaciones</a></li>
-            <li class="d-flex justify-content-center"><a href="./pages/aboutUs.html" class="px-2 my-2">Sobre
+            <li class="d-flex justify-content-center"><a href="./pages/aboutUs.html" class="px-2 my-2  nav__link">Sobre
                 Nosotros</a></li>
             <li class="d-flex justify-content-center"><a href="./pages/login.html"
-                class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i> Iniciar
+                class="px-2 btn btn-outline-info fw-bold my-2 nav__link btn__bg--first "><i
+                  class="bi bi-person-circle"></i>
+                Iniciar
                 Sesión</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  <!-----Comienzo del main------->
   <main class="main">
     <!-----Comienzo del visor------->
     <div class="visor position-relative">
@@ -67,8 +75,8 @@
       <h2 class="position-absolute text-light fs-3 text-center visor__text">Descubre tus límites</h2>
     </div>
     <!-----Comienzo de la sección de cards------->
-    <section class="cards py-5 row justify-content-around flex-column justify-content-center flex-md-row m-0">
-      <div class="card py-1 col-12 col-lg-3 col-md-7">
+    <section class="cards py-5 row justify-content-around flex-column justify-content-center flex-md-row m-0 bg__first">
+      <div class="card py-1 col-12 col-lg-3 col-md-7 cards__card">
         <h5 class="card-title text-center my-4 px-2">Aprovecha todas las ventajas de ser socio</h5>
         <img src="./assets/images/index1.jpg" class="card-img-top card__img" alt="...">
         <div class="card-body d-flex flex-column justify-content-center">
@@ -77,10 +85,10 @@
             clases de clases dirigidas por profesionales y de descuentos exclusivos.</p>
           <p class="d-none d-md-block">¡No pierdas la oportunidad de
             mejorar tu calidad de vida!</p>
-          <a href="#" class="btn btn-primary">Hazte Socio</a>
+          <a href="#" class="btn btn-primary btn__bg--second">Hazte Socio</a>
         </div>
       </div>
-      <div class="card py-1 col-12 col-lg-3 col-md-7">
+      <div class="card py-1 col-12 col-lg-3 col-md-7 cards__card">
         <h5 class="card-title text-center my-4 px-2">Conoce nuestro método y saca tu mejor versión
         </h5>
         <img src="./assets/images/index2.jpg" class="card-img-top card__img" alt="...">
@@ -90,10 +98,10 @@
             disposición podrás poner a prueba tus límites.</p>
           <p class=" d-none d-md-block">¡Ven gratis a conocer a nuestro equipo y el plan diseñado para ti y tus
             objetivos!</p>
-          <a href="#" class="btn btn-primary">Saber más</a>
+          <a href="#" class="btn btn-primary btn__bg--second">Saber más</a>
         </div>
       </div>
-      <div class="card py-1 col-12 col-lg-3 col-md-7">
+      <div class="card py-1 col-12 col-lg-3 col-md-7 cards__card">
         <h5 class="card-title text-center my-4 px-2">Disfruta de nuestras actividades dirigidas y
           diseñadas para ti</h5>
         <img src="./assets/images/index3.jpg" class="card-img-top card__img" alt="...">
@@ -103,12 +111,12 @@
             profesionales.
           </p>
           <p class="d-none d-md-block">¡Un plan a tu medida con actividades individuales y colectivas!</p>
-          <a href="#" class="btn btn-primary">Nuestras Actividades</a>
+          <a href="#" class="btn btn-primary btn__bg--second">Nuestras Actividades</a>
         </div>
       </div>
     </section>
     <!-----Comienzo de la sección de nuestros centros------->
-    <section class="row bg-primary py-5 px-2 p-md-5 m-0">
+    <section class="row py-5 px-2 p-md-5 m-0 bg__third">
       <h3 class=" col-md-3 col-4 border-bottom border-4 p-1 border-warning border-opacity-75">Nuestras Instalaciones
       </h3>
       <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-around">

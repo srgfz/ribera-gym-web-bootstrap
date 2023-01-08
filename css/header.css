@@ -1,0 +1,15 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+.nav__link {
+    transition: transform 0.8s ease;
+}
+
+.nav__link:hover {
+    transform: scale(1.15);
+}
+
+.nav__link--active {
+    font-size: 1.15rem;
+}

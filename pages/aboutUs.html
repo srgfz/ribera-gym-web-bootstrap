@@ -11,22 +11,25 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Iconos Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <!-- CSSs propios -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/visor.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
-    <title>Ribera Gym</title>
+    <title>Ribera Gym | Sobre Nosotros</title>
 </head>
 
 <body>
     <!-- Comienzo del Header -->
-    <header class="sticky-lg-top border-4 border-bottom header z-3">
+    <header class="border-4 border-bottom header z-3">
         <!-- Comienzo del Nav -->
         <nav class="navbar navbar-expand-lg navbar-light px-3 py-0 col-12">
             <div class="d-flex d-lg-none d-block justify-content-between col-5 col-md-3">
-                <h1><a href="./index.php"><img src="../assets/images/logo2.png" alt="Logo del gimansio"
+                <h1><a href="../index.html"><img src="../assets/images/logo2.png" alt="Logo del gimansio"
                             class="img-fluid"></a>
                 </h1>
-
             </div>
             <div class="d-flex d-lg-none">
                 <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
@@ -36,21 +39,29 @@
                 </button>
             </div>
             <div class="container-fluid justify-content-center justify-content-lg-between">
-                <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.php"><img
+                <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="../index.html"><img
                             src="../assets/images/logo1.png" alt="Logo del gimnasio" class="img-fluid"></a></h1>
                 <div class="col-10">
                     <ul class="collapse navbar-collapse gap-5 m-3 d-lg-flex justify-content-center justify-content-lg-evenly"
                         id="navbarTogglerDemo03">
-                        <li class="d-flex justify-content-center"><a href="#"
-                                class="px-2 fw-bold my-2 border-bottom  border-info-subtle">Inicio</a>
+                        <li class="d-flex justify-content-center "><a href="../index.html"
+                                class="px-2 my-2  nav__link">Inicio</a>
                         </li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Actividades y
-                                Precios</a></li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Nuestras
+                        <li class="d-flex justify-content-center">
+                            <a href="./prices.html" class="px-2 my-2  nav__link">Actividades y
+                                Precios</a>
+                        </li>
+                        <li class="d-flex justify-content-center "><a href="./services.html"
+                                class="px-2 my-2  nav__link">Nuestras
                                 Instalaciones</a></li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Sobre Nosotros</a></li>
-                        <li class="d-flex justify-content-center"><a href="./login.html"
-                                class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i>
+                        <li class="d-flex justify-content-center">
+                            <a href="./aboutUs.html"
+                                class="px-2 my-2 border-bottom border-info-subtle fw-bold nav__link nav__link--active">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="d-flex justify-content-center "><a href="./login.html"
+                                class="px-2 btn btn-outline-info fw-bold my-2 nav__link btn__bg--first"><i
+                                    class="bi bi-person-circle"></i>
                                 Iniciar
                                 Sesión</a></li>
                     </ul>
@@ -58,6 +69,7 @@
             </div>
         </nav>
     </header>
+    <!-----Comienzo del main------->
     <main class="main">
         <!-----Comienzo del visor------->
         <div class="visor position-relative">
@@ -68,25 +80,25 @@
                 compromiso</h2>
         </div>
         <!-----nav del main de aboutUs------->
-        <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
+        <ul class="nav nav-tabs justify-content-around bg__first " id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="nuestraHistoria" data-bs-toggle="tab"
+                <button class="nav-link text-dark active" id="nuestraHistoria" data-bs-toggle="tab"
                     data-bs-target="#nuestraHistoria-pane" type="button" role="tab" aria-controls="nuestraHistoria-pane"
                     aria-selected="true">Nuestra
                     Historia</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="proyectos" data-bs-toggle="tab" data-bs-target="#proyectos-pane"
+                <button class="nav-link text-dark" id="proyectos" data-bs-toggle="tab" data-bs-target="#proyectos-pane"
                     type="button" role="tab" aria-controls="proyectos-pane" aria-selected="false">Proyectos</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="nuestraFilosofia" data-bs-toggle="tab"
+                <button class="nav-link text-dark" id="nuestraFilosofia" data-bs-toggle="tab"
                     data-bs-target="#nuestraFilosofia-pane" type="button" role="tab"
                     aria-controls="nuestraFilosofia-pane" aria-selected="false">Nuestra
                     Filosofía</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contacto" data-bs-toggle="tab" data-bs-target="#contacto-pane"
+                <button class="nav-link text-dark" id="contacto" data-bs-toggle="tab" data-bs-target="#contacto-pane"
                     type="button" role="tab" aria-controls="contacto-pane" aria-selected="false">Contacto</button>
             </li>
         </ul>
@@ -96,7 +108,7 @@
                 aria-labelledby="nuestraHistoria" tabindex="0">
                 <!----- sección de historia del gimnasio------->
                 <div
-                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener">
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener bg__fourth">
                     <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
                         <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
                             Nuestra Historia
@@ -142,7 +154,7 @@
             <div class="tab-pane fade" id="proyectos-pane" role="tabpanel" aria-labelledby="proyectos" tabindex="0">
                 <!----- sección de proyectos ------->
                 <div
-                    class="row px-2 py-4 p-md-5 justify-content-evenly bg-primary m-0 flex-column flex-lg-row justify-content-center aling-items-center">
+                    class="row px-2 py-4 p-md-5 justify-content-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-center bg__second ">
                     <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
                         <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
                             Proyectos
@@ -197,7 +209,7 @@
                 tabindex="0">
                 <!----- sección de nuestra filosofía------->
                 <div
-                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener">
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener bg__third ">
                     <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
                         <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
                             Nuestra Filosofía
@@ -250,7 +262,7 @@
             <div class="tab-pane fade" id="contacto-pane" role="tabpanel" aria-labelledby="contacto" tabindex="0">
                 <!----- sección de contacto------->
                 <div
-                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column justify-content-center aling-items-cener bg-info bg-opacity-50 flex-lg-row">
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column justify-content-center aling-items-cener  bg-opacity-50 flex-lg-row bg__second ">
                     <div class="col-12 text-center text-md-start mb-4 col-lg-3">
                         <h3
                             class="border-bottom border-4 p-1 border-warning border-opacity-75 aboutUs__title text-lg-end">
@@ -258,7 +270,7 @@
                         </h3>
                     </div>
                     <div class="col-12 col-lg-8 d-flex justify-content-center mx-auto">
-                        <form class="bg-secondary col-12 p-md-5 p-4 rounded" action="#" method="#">
+                        <form class="col-12 p-md-5 p-4 rounded bg__third" action="#" method="#">
                             <div class="form-floating my-3">
                                 <input type="email" class="form-control" id="floatingInput" name="email"
                                     placeholder="name@example.com" required>
@@ -280,7 +292,7 @@
                                 <label for="floatingTextarea2">Mensaje (Obligatorio)</label>
                             </div>
                             <button type="submit"
-                                class="btn btn-outline-dark px-4 py-2 mt-4 col-4 d-flex justify-content-center mx-auto">Enviar</button>
+                                class="btn btn-outline-dark px-4 py-2 mt-4 col-4 d-flex justify-content-center mx-auto border btn__bg--first">Enviar</button>
                         </form>
                     </div>
                 </div>

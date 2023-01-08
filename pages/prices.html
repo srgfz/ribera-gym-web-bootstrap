@@ -11,22 +11,26 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Iconos Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <!-- CSSs propios -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/visor.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/prices.css">
+
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
-    <title>Ribera Gym</title>
+    <title>Ribera Gym | Actividades y Precios</title>
 </head>
 
 <body>
     <!-- Comienzo del Header -->
-    <header class="sticky-lg-top border-4 border-bottom header z-3">
+    <header class="border-4 border-bottom header z-3">
         <!-- Comienzo del Nav -->
         <nav class="navbar navbar-expand-lg navbar-light px-3 py-0 col-12">
             <div class="d-flex d-lg-none d-block justify-content-between col-5 col-md-3">
-                <h1><a href="./index.php"><img src="../assets/images/logo2.png" alt="Logo del gimansio"
+                <h1><a href="../index.html"><img src="../assets/images/logo2.png" alt="Logo del gimansio"
                             class="img-fluid"></a>
                 </h1>
-
             </div>
             <div class="d-flex d-lg-none">
                 <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
@@ -36,21 +40,30 @@
                 </button>
             </div>
             <div class="container-fluid justify-content-center justify-content-lg-between">
-                <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="./index.php"><img
+                <h1 class="navbar-brand d-flex d-lg-block d-none col-1"><a href="../index.html"><img
                             src="../assets/images/logo1.png" alt="Logo del gimnasio" class="img-fluid"></a></h1>
                 <div class="col-10">
                     <ul class="collapse navbar-collapse gap-5 m-3 d-lg-flex justify-content-center justify-content-lg-evenly"
                         id="navbarTogglerDemo03">
-                        <li class="d-flex justify-content-center"><a href="#"
-                                class="px-2 fw-bold my-2 border-bottom  border-info-subtle">Inicio</a>
+                        <li class="d-flex justify-content-center "><a href="../index.html"
+                                class="px-2 my-2  nav__link">Inicio</a>
                         </li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Actividades y
-                                Precios</a></li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Nuestras
+                        <li class="d-flex justify-content-center">
+                            <a href="./prices.html"
+                                class="px-2 my-2  border-bottom border-info-subtle fw-bold nav__link  nav__link--active">Actividades
+                                y
+                                Precios</a>
+                        </li>
+                        <li class="d-flex justify-content-center "><a href="./services.html"
+                                class="px-2 my-2  nav__link">Nuestras
                                 Instalaciones</a></li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Contacto</a></li>
-                        <li class="d-flex justify-content-center"><a href="./login.html"
-                                class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i>
+                        <li class="d-flex justify-content-center">
+                            <a href="./aboutUs.html" class="px-2 my-2 nav__link">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="d-flex justify-content-center "><a href="./login.html"
+                                class="px-2 btn btn-outline-info fw-bold my-2 nav__link btn__bg--first"><i
+                                    class="bi bi-person-circle"></i>
                                 Iniciar
                                 Sesión</a></li>
                     </ul>
@@ -58,6 +71,7 @@
             </div>
         </nav>
     </header>
+    <!-----Comienzo del main------->
     <main class="main">
         <!-----Comienzo del visor------->
         <div class="visor position-relative">
@@ -67,7 +81,7 @@
             <h2 class="position-absolute text-light fs-2 text-center visor__text">Este mes ¡Matricula gratuita!</h2>
         </div>
         <!----- precios y actividades------->
-        <div class="my-4 p-md-4 mx-md-5 p-lg-5 d-lg-flex align-items-lg-start">
+        <div class="py-4 p-pd-4 px-md-5 p-lg-5 d-lg-flex align-items-lg-start bg__first">
             <!-----nav del main de resolución lg en adelante------->
             <div class="nav nav-pills me-lg-3 d-flex justify-content-evenly" id="pills-tab" role="tablist"
                 aria-orientation="vertical">
@@ -92,7 +106,7 @@
                                     Individual
                                 </button>
                             </h2>
-                            <div id="collapsePirceIndividual" class="accordion-collapse collapse show"
+                            <div id="collapsePirceIndividual" class="accordion-collapse collapse show bg__second"
                                 aria-labelledby="headingPirceIndividual" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <table class="table table-dark table-striped text-center col-12 prices__table">
@@ -136,7 +150,7 @@
                                     Familiar
                                 </button>
                             </h2>
-                            <div id="collapsePriceFamiliar" class="accordion-collapse collapse"
+                            <div id="collapsePriceFamiliar" class="accordion-collapse collapse bg__second"
                                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <table class="table table-dark table-striped text-center col-12 prices__table">
@@ -180,7 +194,7 @@
                                     Jóvenes (menores de 26 años)
                                 </button>
                             </h2>
-                            <div id="collapsePriceYoung" class="accordion-collapse collapse"
+                            <div id="collapsePriceYoung" class="accordion-collapse collapse bg__second"
                                 aria-labelledby="collapsePriceYoung" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <table class="table table-dark table-striped text-center col-12 prices__table">
@@ -224,7 +238,7 @@
                                     Mayores (mayores de 60 años)
                                 </button>
                             </h2>
-                            <div id="collapsePriceSenior" class="accordion-collapse collapse"
+                            <div id="collapsePriceSenior" class="accordion-collapse collapse bg__second"
                                 aria-labelledby="collapsePriceSenior" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <table class="table table-dark table-striped text-center col-12 prices__table">
@@ -263,7 +277,7 @@
                     </div>
                 </div>
                 <!-----Comienzo de las actividades------->
-                <div class="tab-pane fade bg-primary m-md-3 p-3 p-md-5 py-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-evenly d-flex"
+                <div class="tab-pane fade m-md-3 p-3 p-md-5 py-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-evenly d-flex bg__second"
                     id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
                         <img src="../assets/images/gallery/gallery11.jpg" class="card-img" alt="...">

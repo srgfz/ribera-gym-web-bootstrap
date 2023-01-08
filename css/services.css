@@ -1,0 +1,15 @@
+.gallery__img {
+    height: 100%;
+    width: 100%;
+    cursor: zoom-in;
+}
+
+
+
+.gallery__item {
+    transition: transform 0.8s ease;
+}
+
+.gallery__item:hover {
+    transform: scale(1.2);
+}

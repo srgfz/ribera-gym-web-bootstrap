@@ -1,0 +1,18 @@
+.cards__card {
+    transition: transform .8s ease;
+
+}
+
+.cards__card:hover {
+    transform: scale(1.05);
+}
+
+.cards__card:hover>.card__img {
+    filter: grayscale(10%);
+}
+
+.card__img {
+    clip-path: polygon(25% 0%, 75% 0%, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+    filter: grayscale(50%);
+    transition: filter .3s ease;
+}

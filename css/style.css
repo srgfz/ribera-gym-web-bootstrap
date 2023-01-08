@@ -1,10 +1,20 @@
+/** CSS general de RiberaGym */
+
+:root {
+    --first-color: #566c97;
+    --second-color: #3DA5A8;
+    --third-color: #399C78;
+    --fourth-color: #c6ad6e;
+    --fifth-color: #c5af81;
+}
+
 body {
     color: rgb(35, 35, 35);
     margin: 0 auto;
     width: 100%;
     min-width: 375px;
     max-width: 1600px;
-    background-color: rgba(195, 191, 191, 0.659);
+    background-color: rgb(107, 107, 107);
 }
 
 a {
@@ -16,83 +26,63 @@ ul {
     list-style: none;
 }
 
-.header {
-    background-color: rgba(255, 255, 255, 0.93);
+
+/** BOTONES: Botones que utilizaré en todas las pags */
+/* Botone con background opción 1*/
+.btn__bg--first {
+    border-color: var(--first-color);
+    color: whitesmoke;
+    background-color: var(--first-color);
+    transition: border-color .8s ease, color .8s ease, background-color .8s ease;
 }
 
-
-
-.footer {
-    background-color: rgb(35, 35, 35);
-    background-image: url(../assets/images/brushed-alum-dark.png);
-    text-align: center;
-    padding: 80px 50px;
+.btn__bg--first:hover {
+    border-color: var(--first-color);
+    color: var(--first-color);
+    background-color: whitesmoke;
 }
 
-
-.visor {
-    height: 500px;
+/* Boton con background opción 2*/
+.btn__bg--second {
+    border-color: var(--fifth-color);
+    color: whitesmoke;
+    background-color: var(--fifth-color);
+    transition: border-color .8s ease, color .8s ease, background-color .8s ease;
 }
 
-.viser__img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -10;
+.btn__bg--second:hover {
+    border-color: var(--first-color);
+    color: whitesmoke;
+    background-color: var(--first-color);
 }
 
-.visor__video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    z-index: -10;
+/* Botone sin background*/
+.btn__bgnfirst {
+    border-color: var(--third-color);
+    color: var(--third-color);
+    background-color: transparent;
+    transition: border-color .8s ease, color .8s ease, background-color .8s ease;
 }
 
-.visor__text {
-    width: 100%;
-    bottom: 20px;
-    font-variant: small-caps;
+.btn__bgnfirst:hover {
+    border-color: var(--second-color);
+    color: whitesmoke;
+    background-color: var(--second-color);
 }
 
-
-
-.card__img {
-    clip-path: polygon(25% 0%, 75% 0%, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
-    filter: grayscale(50%);
-
+/** Backgound de las distintas secciones que utilizaré en las páginas */
+.bg__first {
+    background-color: rgb(213, 208, 208);
 }
 
-
-
-.login {
-    min-width: 350px;
-    max-width: 700px;
-    color: rgb(62, 61, 61);
+.bg__second {
+    background-color: var(--first-color);
 }
 
-
-
-.gallery__img {
-    height: 100%;
-    width: 100%;
-    cursor: zoom-in;
+.bg__third {
+    background-color: var(--fifth-color);
 }
 
-.prices__accordion {
-    min-width: 360px;
-}
-
-.activity {
-    transition: transform 1.5s, z-index;
-}
-
-.activity:hover {
-    transform: scale(1.5);
-    z-index: 5;
-}
-
-.aboutUs_main {
-    max-height: 400px;
-    overflow: scroll;
-    overflow-x: hidden;
+.bg__fourth {
+    background-color: var(--second-color);
 }
