@@ -75,26 +75,29 @@
     <main class="main">
         <!-----Comienzo del visor------->
         <div class="visor position-relative">
-            <img src="../assets/images/prices1.jpg" alt="" class="position-absolute d-md-none viser__img">
-            <img src="../assets/images/prices2.jpg" alt="" class="position-absolute d-none d-md-block viser__img">
-            <img src="../assets/images/prices3.jpg" alt="" class="position-absolute d-none d-lg-block viser__img">
-            <h2 class="position-absolute text-light fs-2 text-center visor__text">Este mes ¡Matricula gratuita!</h2>
+            <img src="../assets/images/prices1.jpg" alt="Imagen del visor para móvil"
+                class="position-absolute d-md-none viser__img">
+            <img src="../assets/images/prices2.jpg" alt="Imagen del visor para tablet"
+                class="position-absolute d-none d-md-block viser__img">
+            <img src="../assets/images/prices3.jpg" alt="Imagen del visor para ordenador"
+                class="position-absolute d-none d-lg-block viser__img">
+            <h2 class="position-absolute text-light fs-1 text-center visor__text">Este mes ¡Matricula gratuita!</h2>
         </div>
         <!----- precios y actividades------->
         <div class="py-4 p-pd-4 px-md-5 p-lg-5 d-lg-flex align-items-lg-start bg__first">
             <!-----nav del main de resolución lg en adelante------->
             <div class="nav nav-pills me-lg-3 d-flex justify-content-evenly" id="pills-tab" role="tablist"
                 aria-orientation="vertical">
-                <button class="nav-link active my-3 col-5 col-lg-12" id="pills-home-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                <button class="nav-link active my-3 col-5 col-lg-12" id="pricesBtn" data-bs-toggle="pill"
+                    data-bs-target="#prices" type="button" role="tab" aria-controls="prices"
                     aria-selected="true">Precios</button>
-                <button class="nav-link my-3 col-5 col-lg-12" id="pills-profile-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                <button class="nav-link my-3 col-5 col-lg-12" id="activitiesBtn" data-bs-toggle="pill"
+                    data-bs-target="#activities" type="button" role="tab" aria-controls="activities"
                     aria-selected="false">Actividades</button>
             </div>
             <!----cuerpo del main------->
             <div class="tab-content col-11 mx-auto" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                <div class="tab-pane fade show active" id="prices" role="tabpanel" aria-labelledby="pricesBtn"
                     tabindex="0">
                     <!-----Comienzo del acordeón de precios------->
                     <div class="accordion prices__accordion" id="accordionExample">
@@ -277,10 +280,11 @@
                     </div>
                 </div>
                 <!-----Comienzo de las actividades------->
-                <div class="tab-pane fade m-md-3 p-3 p-md-5 py-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-evenly d-flex bg__second"
-                    id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="tab-pane fade m-md-3 p-3 p-md-5 py-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-evenly d-flex bg__second d-none"
+                    id="activities" role="tabpanel" aria-labelledby="activities" tabindex="0">
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images/gallery/gallery11.jpg" class="card-img" alt="...">
+                        <img src="../assets/images/gallery/gallery11.jpg" class="card-img"
+                            alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3 activity__title">YOGA</h5>
@@ -288,7 +292,8 @@
                         </div>
                     </a>
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images//gallery/gallery3.jpg" class="card-img" alt="...">
+                        <img src="../assets/images//gallery/gallery3.jpg" class="card-img"
+                            alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3">NATACIÓN</h5>
@@ -296,7 +301,7 @@
                         </div>
                     </a>
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images/spinning.jpg" class="card-img" alt="...">
+                        <img src="../assets/images/spinning.jpg" class="card-img" alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3">SPINNING</h5>
@@ -304,7 +309,7 @@
                         </div>
                     </a>
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images/pilates.jpg" class="card-img" alt="...">
+                        <img src="../assets/images/pilates.jpg" class="card-img" alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3">PILATES</h5>
@@ -312,7 +317,7 @@
                         </div>
                     </a>
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images/crossfit.jpg" class="card-img" alt="...">
+                        <img src="../assets/images/crossfit.jpg" class="card-img" alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3">CROSSFIT</h5>
@@ -320,7 +325,7 @@
                         </div>
                     </a>
                     <a href="#" class="card text-bg-dark col rounded-0 p-0 text-center  activity">
-                        <img src="../assets/images/zumba.jpg" class="card-img" alt="...">
+                        <img src="../assets/images/zumba.jpg" class="card-img" alt="Imagen de actividad disponible">
                         <div
                             class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
                             <h5 class="card-title fs-4 border-bottom border-3 px-3">ZUMBA</h5>
@@ -354,7 +359,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="col-12 col-md-3 text-center text-md-start m-3">
             <h3 class="text-light opacity-75">Descarga nuestra App</h3>
             <ul class="p-0 ps-md-3 footer__list">
@@ -368,13 +372,12 @@
             </ul>
         </div>
     </footer>
-
     <!-- JS de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
-    <script src="../js/script.js"></script>
+    <!-- JS Propios -->
+    <script src="../js/activitiesScript.js"></script>
 
 </body>
 

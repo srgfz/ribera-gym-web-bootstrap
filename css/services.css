@@ -1,10 +1,10 @@
+/**CSS correspondiente a la página services.html*/
+
 .gallery__img {
     height: 100%;
     width: 100%;
     cursor: zoom-in;
 }
-
-
 
 .gallery__item {
     transition: transform 0.8s ease;

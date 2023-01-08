@@ -1,13 +1,30 @@
 /** CSS general de RiberaGym */
 
+
+/**Cargo las fuentes que voy a utilizar */
+
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Promesh;
+    src: url(../assets/fonts/PROMESHMesh-Regular.ttf);
+}
+
+/** Paleta de colores y fuentes*/
 :root {
     --first-color: #566c97;
     --second-color: #3DA5A8;
     --third-color: #399C78;
     --fourth-color: #c6ad6e;
     --fifth-color: #c5af81;
+    --title-font: Promesh;
+    --subtitle-font: Bebas;
 }
 
+/*Estilo general de la página*/
 body {
     color: rgb(35, 35, 35);
     margin: 0 auto;
@@ -18,7 +35,7 @@ body {
 }
 
 a {
-    color: gray;
+    color: rgb(106, 106, 106);
     text-decoration: none;
 }
 
@@ -85,4 +102,10 @@ ul {
 
 .bg__fourth {
     background-color: var(--second-color);
+}
+
+/*Texto de los títulos de las secciones*/
+
+.section__text {
+    font-family: var(--subtitle-font);
 }
