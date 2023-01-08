@@ -17,7 +17,7 @@ ul {
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.86);
+    background-color: rgba(255, 255, 255, 0.93);
 }
 
 
@@ -31,7 +31,7 @@ ul {
 
 
 .visor {
-    height: 400px;
+    height: 500px;
 }
 
 .viser__img {
@@ -89,4 +89,10 @@ ul {
 .activity:hover {
     transform: scale(1.5);
     z-index: 5;
+}
+
+.aboutUs_main {
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
 }

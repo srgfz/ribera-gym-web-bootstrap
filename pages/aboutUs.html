@@ -48,7 +48,7 @@
                                 Precios</a></li>
                         <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Nuestras
                                 Instalaciones</a></li>
-                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Contacto</a></li>
+                        <li class="d-flex justify-content-center"><a href="#" class="px-2 my-2">Sobre Nosotros</a></li>
                         <li class="d-flex justify-content-center"><a href="./login.html"
                                 class="px-2 btn btn-outline-info fw-bold my-2"><i class="bi bi-person-circle"></i>
                                 Iniciar
@@ -61,13 +61,231 @@
     <main class="main">
         <!-----Comienzo del visor------->
         <div class="visor position-relative">
-            <img src="../assets/images/prices1.jpg" alt="" class="position-absolute d-md-none viser__img">
-            <img src="../assets/images/prices2.jpg" alt="" class="position-absolute d-none d-md-block viser__img">
-            <img src="../assets/images/prices3.jpg" alt="" class="position-absolute d-none d-lg-block viser__img">
-            <h2 class="position-absolute text-light fs-2 text-center visor__text">Este mes ¡Matricula gratuita!</h2>
+            <img src="../assets/images/aboutUsVisor.jpg" alt="" class="position-absolute d-md-none viser__img">
+            <img src="../assets/images/aboutUsVisor2.jpg" alt="" class="position-absolute d-none d-md-block viser__img">
+            <h2 class="position-absolute text-light fs-2 text-center visor__text bg-dark bg-opacity-50 p-3">Ven a probar
+                nuestros servicios sin
+                compromiso</h2>
         </div>
-        <!----- precios y actividades------->
+        <!-----nav del main de aboutUs------->
+        <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="nuestraHistoria" data-bs-toggle="tab"
+                    data-bs-target="#nuestraHistoria-pane" type="button" role="tab" aria-controls="nuestraHistoria-pane"
+                    aria-selected="true">Nuestra
+                    Historia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="proyectos" data-bs-toggle="tab" data-bs-target="#proyectos-pane"
+                    type="button" role="tab" aria-controls="proyectos-pane" aria-selected="false">Proyectos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nuestraFilosofia" data-bs-toggle="tab"
+                    data-bs-target="#nuestraFilosofia-pane" type="button" role="tab"
+                    aria-controls="nuestraFilosofia-pane" aria-selected="false">Nuestra
+                    Filosofía</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contacto" data-bs-toggle="tab" data-bs-target="#contacto-pane"
+                    type="button" role="tab" aria-controls="contacto-pane" aria-selected="false">Contacto</button>
+            </li>
+        </ul>
+        <!-----contenido del aboutUs------->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="nuestraHistoria-pane" role="tabpanel"
+                aria-labelledby="nuestraHistoria" tabindex="0">
+                <!----- sección de historia del gimnasio------->
+                <div
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener">
+                    <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
+                        <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
+                            Nuestra Historia
+                        </h3>
+                        <h4 class="col-10 px-4 d-none d-lg-block ms-auto text-end">Más de 15 años a tu lado</h4>
+                    </div>
 
+                    <div class="col-12 col-md-10 col-lg-6 mx-auto">
+                        <p>
+                            RiberaGym fue fundado en 2008 por un grupo de amigos apasionados del deporte y la salud.
+                            Desde sus
+                            inicios, nuestro objetivo ha sido ofrecer a nuestros clientes una amplia variedad de
+                            actividades y
+                            servicios de calidad en un ambiente acogedor y profesional.
+                        </p>
+                        <p>
+                            A lo largo de los años, RiberaGym ha ido creciendo y renovándose para adaptarse a las
+                            necesidades de
+                            nuestros clientes. En 2011, inauguramos una nueva ala con una piscina climatizada y una
+                            sauna, y en
+                            2013 ampliamos nuestra zona de musculación y cardio con el último equipamiento del mercado.
+                        </p>
+                        <p>
+                            Nuestro equipo de profesionales altamente cualificados siempre está dispuesto a ayudar y
+                            asesorar a
+                            nuestros clientes en su camino hacia una vida más saludable. Gracias a su dedicación y
+                            esfuerzo,
+                            RiberaGym ha sido galardonado con el premio a 'Mejor Gimnasio del Año' en la región en 2015
+                            y 2017.
+                        </p>
+                        <p>
+                            Actualmente, RiberaGym cuenta con más de 10.000 clientes y ofrece una amplia gama de
+                            actividades y
+                            clases, desde yoga y pilates hasta boxeo y crossfit. Nuestras instalaciones están situadas
+                            en el
+                            centro de la ciudad, a solo 10 minutos a pie de la estación de tren. ¡Esperamos verte pronto
+                            en
+                            nuestro gimnasio!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="proyectos-pane" role="tabpanel" aria-labelledby="proyectos" tabindex="0">
+                <!----- sección de proyectos ------->
+                <div
+                    class="row px-2 py-4 p-md-5 justify-content-evenly bg-primary m-0 flex-column flex-lg-row justify-content-center aling-items-center">
+                    <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
+                        <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
+                            Proyectos
+                        </h3>
+                        <h4 class="col-10 px-4 d-none d-lg-block ms-auto text-end">Creciendo junto a ti</h4>
+                    </div>
+
+                    <div class="col-12 col-md-10 col-lg-6 mx-auto">
+                        <p>
+                            En RiberaGym, siempre estamos buscando nuevas formas de mejorar y ampliar nuestros
+                            servicios.
+                            Algunos de nuestros proyectos más recientes incluyen:
+                        </p>
+                        <ul class="ps-0 ps-md-3">
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div> Ampliación de la zona de entrenamiento
+                                    funcional: hemos añadido una nueva sala
+                                    equipada con obstáculos, cajas de saltos y otros elementos para ofrecer a nuestros
+                                    clientes
+                                    un
+                                    entrenamiento aún más completo y divertido.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div> Lanzamiento de una aplicación móvil: hemos creado una aplicación que permite a
+                                    nuestros
+                                    clientes acceder a su programa de entrenamiento personalizado, reservar clases y
+                                    actividades, y seguir sus progresos en tiempo real.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div> Campaña de responsabilidad social: en colaboración con una ONG local, hemos
+                                    organizado
+                                    varias actividades benéficas para recaudar fondos y concienciar sobre la importancia
+                                    de una
+                                    vida activa y saludable.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div> Creación de una tienda de deporte: hemos inaugurado una tienda en nuestras
+                                    instalaciones
+                                    donde nuestros clientes pueden adquirir ropa y calzado deportivo de marcas de
+                                    calidad.</div>
+                            </li>
+                        </ul>
+                        <p>
+                            Siempre estamos trabajando en nuevos proyectos y mejoras para ofrecer a nuestros clientes la
+                            mejor
+                            experiencia en el gimnasio. ¡Mantente atento a nuestras novedades!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nuestraFilosofia-pane" role="tabpanel" aria-labelledby="nuestraFilosofia"
+                tabindex="0">
+                <!----- sección de nuestra filosofía------->
+                <div
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column flex-lg-row justify-content-center aling-items-cener">
+                    <div class=" col-11 text-center text-md-start mb-4 col-lg-4">
+                        <h3 class=" border-bottom border-4 p-1 border-warning border-opacity-75 text-lg-end pe-3">
+                            Nuestra Filosofía
+                        </h3>
+                        <h4 class="col-10 px-4 d-none d-lg-block ms-auto text-end">Misión y valores</h4>
+                    </div>
+
+                    <div class="col-12 col-md-10 col-lg-6 mx-auto">
+                        <p>
+                            En RiberaGym, nuestra misión es ayudar a nuestros clientes a alcanzar sus objetivos de salud
+                            y
+                            bienestar a través de una actividad física regular y una alimentación equilibrada. Creemos
+                            que el
+                            deporte y la salud son fundamentales para una vida plena y feliz.
+
+                            Nuestra filosofía se basa en los siguientes valores:
+                        </p>
+                        <ul class="ps-0 ps-md-3">
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div> Profesionalismo: contamos con un equipo altamente cualificado y comprometido con
+                                    ofrecer
+                                    un
+                                    servicio de calidad.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div>Responsabilidad: nos tomamos muy en serio nuestra responsabilidad de ayudar a
+                                    nuestros
+                                    clientes a mejorar su salud y bienestar.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div>Innovación: estamos constantemente buscando formas de mejorar y ampliar nuestros
+                                    servicios
+                                    para adaptarnos a las necesidades de nuestros clientes.</div>
+                            </li>
+                            <li class="d-flex"><i class="bi bi-caret-right-fill me-3"></i>
+                                <div>Solidaridad: colaboramos con diversas ONGs y organizaciones benéficas para
+                                    contribuir a un
+                                    mundo más saludable y sostenible.</div>
+                            </li>
+                        </ul>
+                        <p>
+                            En RiberaGym, trabajamos con pasión y compromiso para ofrecer a nuestros clientes la mejor
+                            experiencia en el gimnasio. ¡Te esperamos para compartir con nosotros tu camino hacia una
+                            vida más
+                            activa y saludable!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contacto-pane" role="tabpanel" aria-labelledby="contacto" tabindex="0">
+                <!----- sección de contacto------->
+                <div
+                    class="row px-2 py-4 p-md-5 justify-content-lg-evenly m-0 flex-column justify-content-center aling-items-cener bg-info bg-opacity-50 flex-lg-row">
+                    <div class="col-12 text-center text-md-start mb-4 col-lg-3">
+                        <h3
+                            class="border-bottom border-4 p-1 border-warning border-opacity-75 aboutUs__title text-lg-end">
+                            Contactanos
+                        </h3>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex justify-content-center mx-auto">
+                        <form class="bg-secondary col-12 p-md-5 p-4 rounded" action="#" method="#">
+                            <div class="form-floating my-3">
+                                <input type="email" class="form-control" id="floatingInput" name="email"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingInput">Email (Obligatorio)</label>
+                            </div>
+                            <div class="form-floating my-3">
+                                <input type="text" class="form-control" id="floatingNombre" name="name"
+                                    placeholder="Nombre" name="nombre">
+                                <label for="floatingNombre">Nombre (Opcional)</label>
+                            </div>
+                            <div class="form-floating my-3">
+                                <input type="tel" class="form-control" id="floatingTeléfono" name="tlfn"
+                                    placeholder="Teléfono">
+                                <label for="floatingTeléfono">Teléfono (Opcional)</label>
+                            </div>
+                            <div class="form-floating my-3">
+                                <textarea class="form-control" name="mensaje" placeholder="Mensaje"
+                                    id="floatingTextarea2" style="height: 180px" required></textarea>
+                                <label for="floatingTextarea2">Mensaje (Obligatorio)</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-outline-dark px-4 py-2 mt-4 col-4 d-flex justify-content-center mx-auto">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="row justify-content-around py-4 mx-0 footer">
